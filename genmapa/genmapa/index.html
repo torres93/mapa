@@ -1,0 +1,96 @@
+﻿
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Mapa Demo </title>
+
+    <script type="text/javascript" src="js/jquery_2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery_ui.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.charts.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.maps.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.mexico.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.theme.fint.js"></script>
+    <script type="text/javascript" src="js/mapa.js"></script>
+</head>
+<body>
+    <!-- Aqui esta la parte del mapa -->
+    <div>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td height="37" align="center" bgcolor="#DEE4E9" class="titulo"><span style="font-size: 14px"><strong>Personal ocupado total 2014</strong></span></td>
+            </tr>
+        </table>
+
+        <!-- inicia contenido 3 Mapa -->
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mapa_letra">
+
+            <tr bgcolor='#edebfe'>
+                <td align="center" valign="middle" width="70%">
+                    <div id="chart-container" align="center">Cargando mapa de México!</div>
+                </td>
+                <td align="center" class="cuerpo" width="30%">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="5" bordercolor="blue">
+                        <tr bgcolor="#C6C1FF">
+                            <td align="center"><b>Total nacional</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor='#edebfe' class="cuerpo"><span id="graph4">Cargando gráfica...</span></td>
+                        </tr>
+                        <tr bgcolor="#C6C1FF">
+                            <td align="center" id="edo"><b>Total nacional</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor='#edebfe' class="cuerpo"><span id="graph3">Cargando gráfica...</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="top">
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="2" style="font-size: 9pt; font-weight: normal; font-family: Arial, Helvetica, sans-serif;">
+                        <tr bgcolor="#C6C1FF" align="center" style="font-weight: bold">
+                            <td>Entidad</td>
+                            <td><span title="Remuneraciones pagadas al personal ocupado dependiente de la razón social">Remuneraciones <br /> pagadas</span></td>
+                            <td><span title="Gastos por consumo de bienes y servicios">Gastos por <br /> consumo</span></td>
+                            <td><span title="Gastos fiscales, financieros y donaciones">Gastos <br /> fiscales</span></td>
+                            <td><span title="Ingresos por suministro de bienes y servicios">Ingresos por <br /> suministro</span></td>
+                            <td><span title="Ingresos financieros, subsidios y donaciones">Ingresos <br /> financieros</span></td>
+                            <td><span title="Valor de las obras o trabajos ejecutados como contratista principal">Valor de <br /> las obras</span></td>
+                            <td><span title="Existencias">Existencias</span></td>
+                            <td><span title="Total activos fijos">Total activos <br /> fijos</span></td>
+                        </tr>
+                        <tr>
+                            <td align="center" id="edo2"><b>Estados Unidos Mexicanos</b></td>
+                            <td align="center" id="rp">56,922,408</td>
+                            <td align="center" id="gc">320,922,845</td>
+                            <td align="center" id="gf">9,852,809</td>
+                            <td align="center" id="is">576,119,551</td>
+                            <td align="center" id="if">8,040,713</td>
+                            <td align="center" id="vo">450,085,525</td>
+                            <td align="center" id="ex">7,779,559</td>
+                            <td align="center" id="ta">120,422,084</td>
+                        </tr>
+                        <tr>
+                            <td align="center" id="edo3"></td>
+                            <td align="center" id="rp2"></td>
+                            <td align="center" id="gc2"></td>
+                            <td align="center" id="gf2"></td>
+                            <td align="center" id="is2"></td>
+                            <td align="center" id="if2"></td>
+                            <td align="center" id="vo2"></td>
+                            <td align="center" id="ex2"></td>
+                            <td align="center" id="ta2"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <br />
+</body>
+</html>
